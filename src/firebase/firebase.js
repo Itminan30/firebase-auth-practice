@@ -22,9 +22,9 @@ const registerWithEmailAndPassword = async (email, password) => {
     try {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         const user = res.user;
-        console.log(user);
+        return user
     } catch (error) {
-        console.error(error);
+        throw Error(error);
     }
 }
 
