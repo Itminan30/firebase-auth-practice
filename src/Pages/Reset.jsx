@@ -2,7 +2,7 @@
 const Reset = () => {
     return (
         <div>
-            
+            Reset Route
         </div>
     );
 };
