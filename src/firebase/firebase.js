@@ -31,7 +31,7 @@ const registerWithEmailAndPassword = async (email, password) => {
 const loginWithEmailAndPassword = async(email, password) => {
     try {
         const res = await signInWithEmailAndPassword(auth, email, password);
-        return res;
+        return res.user;
     } catch (error) {
         throw Error(error);
     }
