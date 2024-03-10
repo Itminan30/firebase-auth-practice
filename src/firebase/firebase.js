@@ -40,4 +40,5 @@ const loginWithEmailAndPassword = async(email, password) => {
 export {
     registerWithEmailAndPassword,
     loginWithEmailAndPassword,
+    auth
 }
