@@ -14,7 +14,7 @@ function App() {
                 <Routes>
                     <Route element={<PrivateRoutes />}>
                         <Route path='/home' element={<Home />} />
-                        <Route path='/' element={<Home />} />
+                        <Route path='/' element={<Home />} exact/>
                     </Route>
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
